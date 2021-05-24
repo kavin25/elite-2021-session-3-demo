@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+      <form action="/form" method="POST">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Somesh Kar" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="somesh@email.com"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="class">Class</label>
+          <select name="class" id="class">
+            <option value="" selected="">Select a class</option>
+            <option value="VI">VI</option>
+            <option value="VII">VII</option>
+            <option value="VIII">VIII</option>
+            <option value="IX">IX</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="section">Section</label>
+          <select name="section" id="section" disabled="">
+            <option value="" selected>Select a section</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <script src="app.js"></script>
+</body>
+</html>
